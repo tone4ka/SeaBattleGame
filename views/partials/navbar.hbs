@@ -1,0 +1,30 @@
+ <nav class="nav">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Sea battle </a>
+      
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+{{#if isAuth}}
+        {{#if isHome}}
+                <li class="active"><a href="/">Home page</a></li>
+        {{else}}
+                <li><a href="/">Home page</a></li>
+        {{/if}}
+
+        {{#if isOnTheSea}}
+                <li class="active"><a href="/onthesea">On The Sea</a></li>
+        {{else}}
+                <li><a href="/onthesea">On The Sea</a></li>
+        {{/if}}
+        <li><a href="/auth/logout">Sign out</a></li>
+{{else}}
+        {{#if isLogin}}
+                <li class="active"><a href="/auth/login#login">Sign in</a></li>
+        {{else}}
+                <li><a href="/auth/login#login">Sign in</a></li>
+        {{/if}}
+{{/if}}
+      </ul>
+    </div>
+  </nav>
+  {{#if isAuth}}<div class="currentUserName"><p>Flotilia captain {{{currentUserName}}}</p></div> {{/if}}

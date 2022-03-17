@@ -1,0 +1,118 @@
+body{
+    height: 100% !important;
+  }
+.nav {
+    background-color: rgb(0, 153, 255);
+}
+.nav-wrapper {
+    padding: 0 2rem;
+}
+.auth {
+padding-top: 1rem;
+}
+.alert {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgba(255, 0, 0, .3);
+    color: red;
+}
+.btn.btn-blue {
+    max-width: 300px;
+    background-color: rgb(2, 95, 156);
+}
+.inaccessibleInviteBtn {
+    background-color: rgba(94, 120, 138, 0.767);
+}
+.invitationUnswerBtn {
+    background-color: orange;
+}
+.acceptSurrenderBtn{
+    background-color: orange;
+}
+.currentUserName {
+    margin: 0;
+    display: block;
+    font-style: italic;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(2, 95, 156), #ffffff, #ffffff, #ffffff);
+}
+.gamePageTitle {
+    height: 50px;
+}
+.userBox {
+    background: linear-gradient(to top left, rgba(1, 104, 172, 0.404), #ffffff, rgba(1, 104, 172, 0.404));
+    padding: 2px 0 15px 20px;
+    margin: 7px;
+    border-radius: 3px;
+    box-shadow: 0 0 3px #27231e75;
+}
+.gameBox {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.fieldsBox {
+    display: flex;
+    justify-content: space-around;
+}
+.shipsBox {
+    display: flex;
+    justify-content: space-around;
+}
+.enemyFieldBox {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.userFieldBox {
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.userShipPlacingStatus {
+    color: rgba(255, 0, 0, 0.925);
+}
+.enemyShipPlacingStatus {
+    color: rgba(255, 0, 0, 0.925);
+}
+.userFieldRow {
+    display: flex;
+    justify-content: center;
+}
+.enemyFieldRow {
+    display: flex;
+    justify-content: center;
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.gameFieldCell {
+     border: 1px solid rgb(2, 95, 156);
+}
+.shipsBox {
+    padding-top: 3vh;
+    display: flex;
+}
+.ship {
+    display: flex;
+}
+.shipCell {
+    background-color: coral;
+    width: 30px;
+    height: 30px;
+}
+.notInstalledShipCell {
+    border: 1px solid rgb(2, 95, 156);
+}
+.notInstalledShipCell:hover {
+    cursor: pointer;
+    background-color: rgb(214, 67, 14);
+}
